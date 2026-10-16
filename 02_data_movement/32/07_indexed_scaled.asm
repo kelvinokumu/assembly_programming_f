@@ -7,8 +7,8 @@ global _start                    ; Export the entry-point label for the linker.
 
 _start:                          ; Program execution begins at this label.
 
-    mov ebx, numbers             ; Put the array's starting address in EBX, not its first value.
-    mov esi, 8                   ; Set the byte offset to 8: index 2 multiplied by 4 bytes.
+    mov ebx, numbers  
+    mov esi, 4
 
     mov eax, [ebx + esi]         ; Read 4 bytes at the base address plus 8: EAX becomes 30.
 
