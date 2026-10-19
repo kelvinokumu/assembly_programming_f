@@ -2,6 +2,7 @@
 ; nasm -f elf32 01_immediate.asm    --- assemble file
 ; ld -m elf_i386 01_immediate.o     --- link
 ; ./a.out                           ---run
+
 section .text
 global _start
 
